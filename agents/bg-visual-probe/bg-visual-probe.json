@@ -1,0 +1,23 @@
+{
+  "name": "bg-visual-probe",
+  "description": "Runtime probe: can the pod agent read text and layout from an uploaded image?",
+  "instruction": {
+    "$file": "instruction.md"
+  },
+  "toolsets": [
+    "WORKSPACE_CLI"
+  ],
+  "visibility": "POD",
+  "permissions": {
+    "grants": [
+      {
+        "resource_type": "folder",
+        "resource_name": "/brandguard",
+        "permission_ids": [
+          "folder.read",
+          "folder.write"
+        ]
+      }
+    ]
+  }
+}
